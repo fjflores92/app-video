@@ -5,10 +5,11 @@ import Search from '../components/Search';
 import Category from '../components/Category';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
+import Footer from '../components/Footer';
 
 const App = () => {
     return(
-        <div className="app">
+        <main className="app">
             <Header/>
             <Search/>
             <Category title="Lo más perrón">
@@ -167,7 +168,8 @@ const App = () => {
                     />
                 </Carousel>
             </Category>
-        </div>
+            <Footer/>
+        </main>
     );
 };
 
