@@ -1,7 +1,6 @@
 {
-  "name": "fdjflores-video",
+  "name": "app-video",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,15 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjflores92/app-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fjflores92/app-video/issues"
+  },
+  "homepage": "https://github.com/fjflores92/app-video#readme",
+  "description": ""
 }
