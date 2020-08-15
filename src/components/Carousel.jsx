@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import '../assets/styles/Carousel.scss';
-import CarouselItem from './CarouselItem';
 
 class Carousel extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { ...props }
+    }
+
     render() {
         return(
             <section className="carousel">
                 <div className="carousel__container">
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
-                    <CarouselItem/>
+                    {this.state.children}
                 </div>
             </section>
         )

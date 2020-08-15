@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import '../assets/styles/Header.scss';
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { ...props }
+    }
+    
     render() {
         return(
             <header className="header">

@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import '../assets/styles/Search.scss';
 
 class Search extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { ...props }
+    }
+    
     render() {
         return(
             <section className="search">
