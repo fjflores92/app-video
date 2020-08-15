@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HolaMundo from './components/HolaMundo.jsx';
+import App from './containers/App';
+import Header from './components/Header';
 
 ReactDOM.render(
-    <HolaMundo/>,
+    <App/>,
     document.getElementById('app')
 );

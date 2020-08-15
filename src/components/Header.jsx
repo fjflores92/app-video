@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import '../assets/styles/Main.scss'
-import '../assets/styles/Header.scss'
+import '../assets/styles/Header.scss';
 
 class Header extends Component {
     render() {
