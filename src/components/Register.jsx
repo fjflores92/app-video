@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../assets/styles/SignUp.scss';
+import '../assets/styles/Register.scss';
 
-const SignUp = () => (
+const Register = () => (
     <section className="register">
         <div className="register__container">
             <h2>Regístrate</h2>
@@ -16,4 +16,4 @@ const SignUp = () => (
     </section>
 );
 
-export default SignUp;
+export default Register;

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import googleIcon from '../assets/static/google-icon.png';
 import twitterIcon from '../assets/static/twitter-icon.png';
-import '../assets/styles/SignIn.scss';
+import '../assets/styles/Login.scss';
 
-const SignIn = () => (
+const Login = () => (
     <section className="login">
         <div className="login__container">
             <h2>Inicia sesión</h2>
@@ -27,4 +27,4 @@ const SignIn = () => (
     </section>
 );
 
-export default SignIn;
+export default Login;

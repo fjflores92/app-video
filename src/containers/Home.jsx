@@ -5,14 +5,12 @@ import Search from '../components/Search';
 import Category from '../components/Category';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import SignIn from '../components/SignIn';
-import SignUp from '../components/SignUp';
 import Footer from '../components/Footer';
 import '../assets/styles/App.scss';
 
 const CATEGORIES_API = 'http://localhost:3000/categories';
 
-const App = () => {
+const Home = () => {
 
     const categories = useApi(CATEGORIES_API);
 
@@ -37,4 +35,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Home;
