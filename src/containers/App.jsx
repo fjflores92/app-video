@@ -5,6 +5,8 @@ import Search from '../components/Search';
 import Category from '../components/Category';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
+import SignIn from '../components/SignIn';
+import SignUp from '../components/SignUp';
 import Footer from '../components/Footer';
 import '../assets/styles/App.scss';
 
@@ -16,7 +18,8 @@ const App = () => {
 
     return categories.length === 0 ? <h1>Loading...</h1> : (
         <main className="app">
-            <Header/>
+            <Header isAuth="true"/>
+
             <Search/>
 
             {categories.map(category =>
