@@ -1,20 +1,11 @@
 import React, { Component } from 'react';
 import '../assets/styles/Category.scss';
 
-class Category extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { ...props }
-    }
-
-    render() {
-        return(
-            <section className="category">
-                <h3 className="category__title">{this.state.title}</h3>
-                {this.state.children}
-            </section>
-        )
-    };
-}
+const Category = ({ title, children }) => (
+    <section className="category">
+        <h3 className="category__title">{title}</h3>
+        {children}
+    </section>
+);
 
 export default Category;
