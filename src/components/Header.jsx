@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import userIcon from '../assets/static/user-icon.png';
 import '../assets/styles/Header.scss';
 
 const Header = ({ isAuth }) => (
     <header className="header">
         <div className="header__app">
-            <h1 className="header__app--title">App Video</h1>
+            <Link to="/">
+                <h1 className="header__app--title">App Video</h1>
+            </Link>
         </div>
 
         { isAuth && <div className="header__menu">
@@ -14,8 +17,8 @@ const Header = ({ isAuth }) => (
                 <p>Perfil</p>
             </div>
             <ul>
-                <li><a href="/">Cuenta</a></li>
-                <li><a href="/">Cerrar Sesión</a></li>
+                <li><Link to="/">Cuenta</Link></li>
+                <li><Link to="/">Cerrar Sesión</Link></li>
             </ul>
         </div>}
     </header>

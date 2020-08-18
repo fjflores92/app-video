@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../assets/styles/Carousel.scss';
 
 const Carousel = ({ children }) => (
