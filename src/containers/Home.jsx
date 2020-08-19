@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import useApi from '../hooks/useApi';
 import Search from '../components/Search';
 import Category from '../components/Category';
 import Carousel from '../components/Carousel';
@@ -16,7 +15,9 @@ const Home = ({ myList, categories }) => {
                 <Category title="Mis favoritos">
                     <Carousel>
                     {myList.map(item => 
-                        <CarouselItem key={item.id} {...item} />
+                        <CarouselItem
+                            key={`fav_${item.id}`} {...item}
+                            isFavorite={true}/>
                     )}
                     </Carousel>
                 </Category>
@@ -37,7 +38,7 @@ const Home = ({ myList, categories }) => {
 
 const mapStateToProps = state => {
     return {
-        myList: state.categories,
+        myList: state.myList,
         categories: state.categories
     }
 }
