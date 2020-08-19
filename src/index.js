@@ -338,7 +338,8 @@ const initialState = {
                 }
             ]
         }
-    ]
+    ],
+    "results": []
 };
 
 const store = createStore(reducer, initialState);

@@ -40,13 +40,13 @@ const reducer = (state, action) => {
                 })
             }
         case 'LOGIN_REQUEST':
-            const user = users.filter(item => (item.email === action.payload.email && item.password === action.payload.password));
-            if (user && user.length) {
+            const user = users.find(item => (item.email === action.payload.email && item.password === action.payload.password));
+            if (user) {
                 return {
                     ...state,
                     isAuth: true,
                     user: {
-                        ...users.filter
+                        ...user
                     }
                 }
             } else {
@@ -60,6 +60,19 @@ const reducer = (state, action) => {
                 ...state,
                 isAuth: false,
                 user: {}
+            }
+        case 'REGISTER_REQUEST':
+            return {
+                ...state,
+                isAuth: true,
+                user: {
+                    ...action.payload
+                }
+            }
+        case 'GET_VIDEO_DATA':
+            return {
+                ...state,
+                playing: state.categories.reduce((videos, category) => videos.concat(category.videos), []).find(video => video.id === Number(action.payload))
             }
         default:
             return state;

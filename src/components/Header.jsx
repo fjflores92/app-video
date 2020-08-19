@@ -6,7 +6,7 @@ import '../assets/styles/Header.scss';
 import { logoutRequest } from '../actions';
 
 const Header = (props) => {
-    const { isAuth, history } = props;
+    const { isAuth, history, user } = props;
 
     const logOut = event => {
         event.preventDefault();
@@ -29,7 +29,7 @@ const Header = (props) => {
                 </div>
                 { isAuth
                 ? <ul>
-                    <li><Link to="/">Cuenta</Link></li>
+                    <li><Link to="/">{user.name}</Link></li>
                     <li><a href="#" onClick={logOut}>Cerrar Sesión</a></li>
                 </ul>
                 : <ul>
@@ -46,7 +46,8 @@ const mapDispatchToProps = {
 
 const mapStateToProps = state => {
     return {
-        isAuth: state.isAuth
+        isAuth: state.isAuth,
+        user: state.user,
     }
 }
 
