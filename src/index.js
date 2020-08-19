@@ -6,6 +6,7 @@ import reducer from './reducers';
 import App from './routes/App';
 
 const initialState = {
+    "isAuth": false,
     "user": {},
     "playing": {},
     "myList": [],

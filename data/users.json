@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Francisco Flores",
+            "email": "fflores.ic.ipn@gmail.com",
+            "password": "123"
+        },
+        {
+            "id": 2,
+            "name": "Francisco Flores",
+            "email": "fflores.ic.ipn@hotmail.com",
+            "password": "123"
+        },
+        {
+            "id": 3,
+            "name": "Francisco Flores",
+            "email": "contacto@fdjflores.com",
+            "password": "123"
+        },
+        {
+            "id": 4,
+            "name": "Francisco Flores",
+            "email": "fdjflores@braapi.com",
+            "password": "123"
+        }
+    ]
+}
